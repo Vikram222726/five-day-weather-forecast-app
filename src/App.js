@@ -33,7 +33,7 @@ function App() {
 
   const fetchData = async (q) => {
     const { data } = await axios.get(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${q}&appid=b539f504ed29ff36eb0a092685f95d6f`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${q}&appid=b539f504ed29ff36eb0a092685f95d6f`
     );
     setWeather(data);
   };
